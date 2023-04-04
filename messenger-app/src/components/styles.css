@@ -1,0 +1,20 @@
+.password-field-container span {
+    color: royalblue;
+}
+
+.password-field-container span :hover{
+    cursor: pointer;
+}
+
+.password-field-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.password-field-container input {
+    height: 3em;
+    border-radius: 1em;
+    width: 100%;
+}

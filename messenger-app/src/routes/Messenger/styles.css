@@ -1,0 +1,95 @@
+.chat-list-container {
+    width: 30%;
+    border-right: 1px solid black;
+    overflow-y: scroll;
+}
+
+.messages-window-container {
+    width: 70%;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.messenger-page {
+    height: 50em;
+    width: 100%;
+    display: flex;
+}
+
+.chat-list-item {
+    padding: 2em;
+    border-bottom: 1px solid black;
+}
+
+.chat-list-container .selected-chat {
+    border: 5px solid turquoise;
+}
+
+.chat-list-item input {
+    height: 3em;
+    border-radius: 1em;
+    width: 100%;
+}
+
+.chat-list-item button {
+    margin: .5em;
+}
+
+.new-chat-btn {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.new-chat-btn:hover {
+    cursor: pointer;
+}
+
+.message-container {
+    margin: 1em;
+    border-radius: 5px;
+    display: flex;
+    width: 60%;
+}
+
+.message-container .message {
+    margin: 1em;
+    color: white;
+}
+
+.message-sent {
+    background-color: darkorchid;
+    align-self: flex-end;
+}
+
+.message-received {
+    background-color: turquoise;
+}
+
+.message-feed-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 90%;
+}
+
+.messages-window-container #message-input {
+    height: 3em;
+    border-radius: 1em;
+    width: 80%;
+}
+
+.messages-window-container button {
+    height: 2.5em;
+    width: 10em;
+    border-radius: 0.7em;
+}
+
+.new-message-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+    padding-top: 1em;
+}

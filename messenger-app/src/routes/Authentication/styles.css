@@ -1,0 +1,39 @@
+.login-fields-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-self: center;
+    justify-content: space-between;
+    margin-top: 5em;
+}
+
+.login-fields-container .username-entry {
+    height: 3em;
+    border-radius: 1em;
+    margin-top: 2em;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.action-btn-container {
+    margin-top: 2em;
+    width: 30%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.action-btn-container button {
+    height: 2.5em;
+    width: 10em;
+    border-radius: 0.7em;
+}
+
+.action-btn-container button :hover {
+    cursor: pointer;
+}

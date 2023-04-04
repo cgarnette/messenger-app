@@ -14,7 +14,7 @@ const ChatList: React.FC<{ chatList: Chat[], setActiveChat: (id: string) => void
         <>
             {
                 chatList.map((chat: Chat, index: number) => (
-                    <div className={getClassName(chat.id)} onClick={() => setActive(chat.id)}>
+                    <div className={getClassName(chat.id)} onClick={() => setActive(chat.id)} key={`${chat.id}-${index}`}>
                         <span key={`${chat.recipient}-${index}`}>
                             {chat.recipient}
                         </span>

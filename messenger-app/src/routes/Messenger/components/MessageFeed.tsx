@@ -8,8 +8,8 @@ const MessageFeed: React.FC<{ feedItems: Message[] }> = ({ feedItems }) => {
     return (
         <div className="message-feed-container">
             {
-                feedItems.map((messageItem) => (
-                    <div className={`message-container message-${username === messageItem.sender ? 'sent' : 'received'}`}>
+                feedItems.map((messageItem, index) => (
+                    <div className={`message-container message-${username === messageItem.sender ? 'sent' : 'received'}`} key={`message-${index}`}>
                         <span className="message">
                             {messageItem.message}
                         </span>
